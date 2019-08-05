@@ -8,6 +8,7 @@ pipeline {
             steps {
                 sh 'cd example-service/'
                 sh 'pwd'
+                sh 'ls -la'
                 sh 'mvn clean package'
             }
         }
