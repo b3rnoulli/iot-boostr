@@ -6,7 +6,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'cd example-service/ & mvn -B -DskipTests clean package'
+                sh 'cd example-service/'
+                sh 'pwd'
+                sh 'mvn clean package'
             }
         }
     }
